@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 
 
-'''st.image('https://github.com/sani002/mkpapp/blob/main/Header.png?raw=true')'''
+'''st.image('https://github.com/Suraj9968/MonnkeyPox-Detector/blob/master/assets/logo.png')'''
 
 hide_streamlit_style = """
             <style>
