@@ -6,7 +6,7 @@ The global outbreak of the virus previously called 'Monkeypox', now referred to 
 
 Graphical representation of our intended working pipeline:<br />
 
-![Working pipeline](https://github.com/ShamsNafisaAli/Monkeypox-Skin-Lesion-Dataset-v2/blob/main/Assets/GA_aug.JPG)
+![Working pipeline](https://github.com/Suraj9968/MonnkeyPox-Detector/blob/master/assets/GA_aug.jpeg)
 
 * * *
 
@@ -18,7 +18,7 @@ The dataset itself is available for download at the [Kaggle](https://www.kaggle.
 Some sample images from the dataset:<br />
 
 
-![Sample Images](https://github.com/ShamsNafisaAli/Monkeypox-Skin-Lesion-Dataset-v2/blob/main/Assets/samples.jpg)
+![Sample Images](https://github.com/Suraj9968/MonnkeyPox-Detector/blob/master/assets/samples.jpg)
 
 
 * * *
@@ -35,22 +35,11 @@ The dataset contains a total number of 755 images from 541 unique patients. The 
 | Hand, foot and mouth disease  | 161                   | 144                    |
 | Healthy                       | 114                   | 105                    |
 | Total                         | 755                   | 54                     |
-
-
-
-There are 2 folders in the dataset.<br />
-
-1) Original Images: This folder includes a subfolder named "FOLDS" containing five folds (fold1-fold5) for 5-fold cross-validation with the original images. Each fold has separate folders for the test, train, and validation sets.<br />
-
-2) Augmented Images: To aid the classification task, several data augmentation methods such as rotation, translation, reflection, shear, hue, saturation, contrast and brightness jitter, noise, scaling etc. have been applied using MATLAB R2020a. Although this can be readily done using ImageGenerator/other image augmentors, to ensure reproducibility of the results, the augmented images are provided in this folder. It contains a subfolder called "FOLDS_AUG" with augmented images of the train sets from each fold in the "FOLDS" subfolder of the "Original Images".***The augmentation process resulted in an approximate 14-fold increase in the number of images.***<br />
  
 
 # Web-Application
 
-Since we intend to build an end to end solution - starting with dataset creation and ending with a live web app, a prototype of the web-app has already been developed using the open-source python streamlit framework with a flask core and has been hosted in the streamlit provided server for better user experience. In the app, [Skin Lesion Detector](https://skinlesionclassifierbymhealthlab.streamlit.app/), users can get, not only a suggestion but also the accuracy of the suggestion. <br />
+In the development of our Monkeypox Skin Lesion Detection Web App, we leveraged the power of deep learning through the implementation of a ResNet-50 model. ResNet-50, known for its deep architecture and outstanding performance in image classification tasks, played a pivotal role in accurately identifying patterns associated with Monkeypox skin lesions. The robust capabilities of ResNet-50 enabled our model to provide precise and reliable results, contributing to the app's effectiveness in early detection. Complementing the advanced backend, we employed Streamlit for the frontend interface, ensuring a seamless and user-friendly experience. Streamlit's simplicity and versatility allowed us to create an intuitive interface that facilitates effortless image uploads and provides users with prompt and easily understandable analysis results. Together, the combination of ResNet-50 and Streamlit enhances the overall functionality of our web app, offering a powerful tool for Monkeypox detection accessible to both healthcare professionals and the broader community. In the app, [Skin Lesion Detector](https://skinlesionclassifierbymhealthlab.streamlit.app/), users can get, not only a suggestion but also the accuracy of the suggestion. <br />
 
-The app's dynamic and future updates will incorporate the ability to store user data and use them to train the model realtime.<br />
-
-![Sample Images](https://github.com/ShamsNafisaAli/Monkeypox-Skin-Lesion-Dataset-v2/blob/main/Assets/app_int_dark.png)
 
 * * *
